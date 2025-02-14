@@ -1,5 +1,5 @@
 function Home() {
-  return <div>Hello Wordewqeqw</div>;
+  return <div>Hello Word</div>;
 }
 
 export default Home;
