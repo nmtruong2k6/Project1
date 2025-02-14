@@ -7,7 +7,7 @@ type Props = {
   children: ReactNode | ReactElement;
 };
 
-const PublicGuard: React.FC<Props> = ({ children }) => {
+const Public: React.FC<Props> = ({ children }) => {
   const auth = JSON.parse(localStorage.getItem(LOCAL_USER_KEY) || "{}");
   return (
     <Fragment>
@@ -20,4 +20,4 @@ const PublicGuard: React.FC<Props> = ({ children }) => {
   );
 };
 
-export { PublicGuard };
+export { Public };
